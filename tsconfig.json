@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "es2016",                    /* Set the JavaScript language version for emitted JavaScript. */
+    "module": "commonjs",                  /* Specify what module code is generated. */
+    "jsx": "react-jsx",                    /* Enable JSX support (React 17+). */
+    
+    /* Modules */
+    "esModuleInterop": true,               /* Enable compatibility for importing CommonJS modules. */
+    "forceConsistentCasingInFileNames": true,  /* Ensure consistent file name casing. */
+    
+    /* Type Checking */
+    "strict": true,                        /* Enable all strict type-checking options. */
+    
+    /* Misc */
+    "skipLibCheck": true                   /* Skip type checking all .d.ts files. */
+  },
+  "include": ["src"],                      /* Include all TypeScript/TSX files inside the src folder */
+  "exclude": ["node_modules", "build"]     /* Exclude node_modules and build output */
+}
