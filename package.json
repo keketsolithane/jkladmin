@@ -12,9 +12,9 @@
     "react-scripts": "^5.0.1"
   },
   "scripts": {
-    "build": "tsc",
-    "start": "react-scripts start"
-  },
+  "start": "react-scripts start",
+  "build": "react-scripts build"
+},
   "devDependencies": {
     "@types/node": "^24.2.1",
     "@types/react": "^19.1.10",
