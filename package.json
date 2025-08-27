@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@netlify/blobs": "^6.5.0",
     "@supabase/supabase-js": "^2.54.0",
     "ajv": "^6.12.6",
     "ajv-keywords": "^3.5.2",
@@ -12,9 +13,9 @@
     "react-scripts": "^5.0.1"
   },
   "scripts": {
-  "start": "react-scripts start",
-  "build": "react-scripts build"
-},
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
   "devDependencies": {
     "@types/node": "^24.2.1",
     "@types/react": "^19.1.10",
