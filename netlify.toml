@@ -1,11 +1,11 @@
 [build]
   command = "npm run build"
   publish = "build"
-  environment = { 
-    NODE_VERSION = "18",
-    NEXT_PUBLIC_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InByd3Z4dHdraGNndXJqYWd5bnZsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTYxMTU0MDMsImV4cCI6MjA3MTY5MTQwM30.TS7xw27SqrQExXzJQXTTCnbmTh4CcdgNTckKS7U30xQ",
-    NEXT_PUBLIC_SUPABASE_URL = "https://prwvxtwkhcgurjagynvl.supabase.co"
-  }
+
+[build.environment]
+  NODE_VERSION = "18"
+  NEXT_PUBLIC_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InByd3Z4dHdraGNndXJqYWd5bnZsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTYxMTU0MDMsImV4cCI6MjA3MTY5MTQwM30.TS7xw27SqrQExXzJQXTTCnbmTh4CcdgNTckKS7U30xQ"
+  NEXT_PUBLIC_SUPABASE_URL = "https://prwvxtwkhcgurjagynvl.supabase.co"
 
 [[redirects]]
   from = "/*"
