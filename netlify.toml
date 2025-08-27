@@ -1,6 +1,16 @@
+# netlify.toml
 [build]
+  # Run the build script from your package.json
   command = "npm run build"
+  # Folder where your built files go
   publish = "build"
+  # Environment variables if needed
+  environment = { 
+    NODE_VERSION = "18",
+    NEXT_PUBLIC_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InByd3Z4dHdraGNndXJqYWd5bnZsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTYxMTU0MDMsImV4cCI6MjA3MTY5MTQwM30.TS7xw27SqrQExXzJQXTTCnbmTh4CcdgNTckKS7U30xQ",
+    NEXT_PUBLIC_SUPABASE_URL = "https://prwvxtwkhcgurjagynvl.supabase.co"
+  }
 
-[build.environment]
-  NODE_VERSION = "18"
+# Disable Netlify plugins to avoid the @netlify/blobs issue
+[plugins]
+  # Empty for now
