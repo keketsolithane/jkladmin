@@ -4,7 +4,7 @@ import { createClient } from "@supabase/supabase-js";
 import { User, DataRow } from "./types";
 
 const SUPABASE_URL = "https://prwvxtwkhcgurjagynvl.supabase.co";
-const SUPABASE_ANON_KEY ="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InByd3Z4dHdraGNndXJqYWd5bnZsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTYxMTU0MDMsImV4cCI6MjA3MTY5MTQwM30.TS7xw27SqrQExXzJQXTTCnbmTh4CcdgNTckKS7U30xQ";
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InByd3Z4dHdraGNndXJqYWd5bnZsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTYxMTU0MDMsImV4cCI6MjA3MTY5MTQwM30.TS7xw27SqrQExXzJQXTTCnbmTh4CcdgNTckKS7U30xQ";
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 type HomeProps = {
@@ -91,6 +91,10 @@ function Home({ user, onLogout }: HomeProps) {
           </button>
           <button onClick={() => fetchData("quotes")} className="card-btn">
             Requests
+          </button>
+          {/* ADDED ENROLLMENTS BUTTON */}
+          <button onClick={() => fetchData("enrollments")} className="card-btn">
+            Enrollments
           </button>
           <button onClick={handleCreateAccount} className="card-btn create">
             Create Account
